@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optionTagImage"
+        android:title="Tag Image" />
+    <item
+        android:id="@+id/optionProducts"
+        android:title="Products" />
+    <item
+        android:id="@+id/optionPhysicalAudit"
+        android:title="Physical Audit" />
+    <item
+        android:id="@+id/optionCustomerFeedback"
+        android:title="Customer Feedback" />
+    <item
+        android:id="@+id/optionLedger"
+        android:title="Ledger" />
+    <item
+        android:id="@+id/optionSetting"
+        android:title="Settings" />
+    <item
+        android:id="@+id/optionDeleteAll"
+        android:title="Delete All" />
+    <item
+        android:id="@+id/optionPrintAll"
+        android:title="Print All" />
+</menu>

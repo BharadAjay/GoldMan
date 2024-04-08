@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="verylight">#03000000</color>
+    <color name="cardGray">#F2F3F5</color>
+    <color name="gray_line">#D5D3D3</color>
+    <color name="gray">#808080</color>
+    <color name="light_red">#4DFfEFEF</color>
+    <color name="clr_negative">#FF0000</color>
+    <color name="clr_positive">#13CE66</color>
+    <color name="clr_warning">#FFCC3D</color>
+    <color name="blue">#2929CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green100">#edf6f0</color>
+    <color name="green200">#c8e4d1</color>
+    <color name="green300">#a3d2b3</color>
+    <color name="green400">#7ebf94</color>
+    <color name="green500">#47a466</color>
+    <color name="green600">#40945c</color>
+    <color name="green700">#327347</color>
+    <color name="green800">#245233</color>
+    <color name="green900">#15311f</color>
+    <color name="black">#000000</color>
+    <color name="solitude">#E6F2FE</color>
+    <color name="gallery">#F0F0F0</color>
+    <color name="dodgerBlue">#1689F6</color>
+    <color name="halfBaked">#84BCD3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+</resources>

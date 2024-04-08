@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topRelative"
+        android:layout_above="@+id/linearBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/goldbookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_gray_card"
+                android:padding="@dimen/_10sdp">
+
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/jewelbook_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_eye"
+                    app:tint="@android:color/black"
+                    tools:layout_editor_absoluteX="326dp"
+                    tools:layout_editor_absoluteY="5dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gallery"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/bg_gray_card"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/spartan_medium"
+                            android:gravity="center"
+                            android:text="Inv No."
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/txtInvNoBill"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:fontFamily="@font/spartan_semibold"
+                            android:gravity="center"
+
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:text="1"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearDatebill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_gray_card"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/spartan_semibold"
+                            android:gravity="center"
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:text="Date "
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/spartan_semibold"
+                            android:gravity="center"
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:text="06/01/2020"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_calender"
+                            app:tint="@color/gray" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gray_card"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/spartan_medium"
+                    android:text="Account Number"
+                    android:textColor="@color/green500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtAccNumberBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_green_card"
+                    android:hint="Enter Account no"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_8sdp"
+                    android:singleLine="true"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/spartan_medium"
+                    android:text="Account Name"
+                    android:textColor="@color/green500"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtAccountNameBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_green_card"
+                    android:hint="Enter your Account name"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:padding="@dimen/_8sdp"
+                    android:singleLine="true">
+
+                </EditText>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray_card"
+                    android:orientation="horizontal"
+
+                    >
+                    <Button
+                        android:id="@+id/Act_Dash_sale"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:text="Sale"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/white">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/Act_Dash_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:text="Purchase"
+                        android:textColor="@color/white">
+
+                    </Button>
+                    <Button
+                        android:id="@+id/Act_Dash_Rate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:text="Rate"
+                        android:textColor="@color/white">
+
+                    </Button>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/spartan_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Item Details"
+                    android:textColor="@color/green500" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerItemDetailBillEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerItemDetailBillEntryJama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+                <TextView
+                    android:id="@+id/txtUdhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="Udhar"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtGrWtTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtFineTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|end"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNtWtTotalBillEntry"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtNtAmtTotalBillEntry"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|end"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtJama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="Jama"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtJamaGrWtTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtJamaFineTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|end"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtJamaNtWtTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtJamaNtAmtTotalBill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/spartan_semibold"
+                        android:gravity="center_vertical|end"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/bg_gray_card"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Item Detail"
+                        android:textColor="@color/green500"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tagNO"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Cash"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edtCash"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_green_card"
+                            android:hint="Enter your cash"
+                            android:imeOptions="actionGo"
+                            android:inputType="number"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Bank"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edtBank"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_green_card"
+                            android:hint="Enter Bank"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Kasar"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                        <EditText
+                            android:id="@+id/edtKasar"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_green_card"
+                            android:hint="Enter Kasar"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Total Amount"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edtTotalAmountBIll"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_green_card"
+                            android:hint="Your Amount is"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Note"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edtNote"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_green_card"
+                            android:hint="Enter your Note"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/green200"
+            android:fontFamily="@font/spartan_semibold"
+            android:text="clear"
+            android:textColor="@color/black">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnClearBill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/spartan_semibold"
+            android:text="save"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

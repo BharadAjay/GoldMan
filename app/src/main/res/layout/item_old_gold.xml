@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardViewItemOldGold"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_18sdp"
+    app:cardPreventCornerOverlap="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvItemNameOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Item Name"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvItemRateLabelOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:text="Rate:"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemNameOldGold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvItemRateOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="0.00"
+            app:layout_constraintStart_toEndOf="@+id/mtvItemRateLabelOldGold"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemNameOldGold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvSeparatorOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:text="\u2022"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/mtvItemRateOldGold"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemNameOldGold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:text="W:"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/mtvSeparatorOldGold"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemNameOldGold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvItemGrossWeightOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="0.000"
+            app:layout_constraintStart_toEndOf="@+id/materTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemNameOldGold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvItemAmountOldGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvItemRateOldGold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbtnDeleteItemOldGold"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/delete_24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Share"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_items_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Items Total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received Amount"
+                android:textColor="@color/green500"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_card_amount"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Card Amount"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Cash Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_cash_amount"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Cash amount"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Check Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_check_amount"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Check amount"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Old Gold Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_oldgold_amount"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Old gold amount"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Old Gold weight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_oldgold_weight"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Old gold weight"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Charges"
+                android:textColor="@color/green500"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Charge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/edt_card_charge"
+                style="@style/Edittext_Rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:hint="Card Charge"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/txt_full_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
